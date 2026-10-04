@@ -4,14 +4,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Portfolio brand tokens (professional blue / navy / light-blue) */
+/* Portfolio brand tokens (lavender / purple / white) */
 @theme inline {
-  --color-brand: #2563eb;
+  --color-brand: #6D28D9;
   --color-brand-foreground: #ffffff;
-  --color-navy: #0f172a;
-  --color-navy-soft: #1e293b;
-  --color-sky: #eff6ff;
-  --color-sky-200: #dbeafe;
+  --color-emerald: #A78BFA;
+  --color-lime: #7C3AED;
+  --color-navy: #1f2937;
+  --color-navy-soft: #64748b;
+  --color-sky: #FAF8FF;
+  --color-sky-200: #EDE9FE;
   --font-sans: var(--font-inter);
 }
 
@@ -58,24 +60,24 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+  --primary: #6D28D9;
+  --primary-foreground: #ffffff;
+  --secondary: #EDE9FE;
+  --secondary-foreground: #1f2937;
+  --muted: #EDE9FE;
+  --muted-foreground: #1f2937;
+  --accent: #ff6b35;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: #E9E2F8;
+  --input: #E9E2F8;
+  --ring: #A78BFA;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -164,12 +166,56 @@
   }
 }
 
+/* Keep the requested portfolio palette consistent in every preview and browser color scheme. */
+:root:not(.light) {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+  --primary: #6D28D9;
+  --primary-foreground: #ffffff;
+  --secondary: #EDE9FE;
+  --secondary-foreground: #1f2937;
+  --muted: #EDE9FE;
+  --muted-foreground: #1f2937;
+  --accent: #ff6b35;
+  --accent-foreground: #ffffff;
+  --border: #E9E2F8;
+  --input: #E9E2F8;
+  --ring: #A78BFA;
+}
+
+.dark {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+  --primary: #6D28D9;
+  --primary-foreground: #ffffff;
+  --secondary: #EDE9FE;
+  --secondary-foreground: #1f2937;
+  --muted: #EDE9FE;
+  --muted-foreground: #1f2937;
+  --accent: #ff6b35;
+  --accent-foreground: #ffffff;
+  --border: #E9E2F8;
+  --input: #E9E2F8;
+  --ring: #A78BFA;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    background-color: #FFFFFF;
   }
   /* Smooth scrolling for in-page nav links, offset for the sticky navbar */
   html {
@@ -205,4 +251,9 @@
 
 .animate-fade-up {
   animation: fade-up 0.6s ease-out both;
+}
+
+/* Quiet botanical atmosphere without adding visual clutter. */
+.section-lavender-glow {
+  background-image: radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.07), transparent 28%), radial-gradient(circle at 90% 80%, rgba(167, 139, 250, 0.08), transparent 24%);
 }

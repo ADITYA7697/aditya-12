@@ -15,7 +15,7 @@ export function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+              className="group rounded-2xl border border-brand/15 bg-white p-6 shadow-sm shadow-brand/5 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
             >
               {/* Simple monogram avatar keeps the design consistent without external logos */}
               <div className="flex items-center gap-3">
@@ -23,9 +23,9 @@ export function Skills() {
                   {skill.name.slice(0, 2).toUpperCase()}
                 </span>
                 <div className="flex items-center gap-2">
-                  <h3 className="font-semibold text-slate-900">{skill.name}</h3>
+                  <h3 className="font-semibold text-navy">{skill.name}</h3>
                   {skill.learning && (
-                    <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-brand">
+                    <span className="rounded-full bg-sky px-2 py-0.5 text-xs font-medium text-brand">
                       Learning
                     </span>
                   )}

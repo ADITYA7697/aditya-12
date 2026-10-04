@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Aditya Dube — Aspiring Full Stack Developer',
+  title: 'Aditya Dube — Full Stack Developer',
   description:
     'Portfolio of Aditya Dube, a BCA student and aspiring Full Stack Developer looking for an internship. Explore projects, skills, and get in touch.',
   generator: 'v0.app',
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Aditya Dube' }],
   openGraph: {
-    title: 'Aditya Dube — Aspiring Full Stack Developer',
+    title: 'Aditya Dube — Full Stack Developer',
     description:
-      'BCA final-year student and aspiring Full Stack Developer looking for an internship.',
+      'BCA student and Full Stack Developer building modern web experiences.',
     type: 'website',
   },
   icons: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#2563eb',
+  themeColor: '#6c5ce7',
 }
 
 export default function RootLayout({
