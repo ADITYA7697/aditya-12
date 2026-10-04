@@ -43,7 +43,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-sky py-20 sm:py-24 section-lavender-glow">
+    <section id="contact" className="bg-transparent py-20 sm:py-24 section-lavender-glow">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Contact"

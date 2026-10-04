@@ -3,7 +3,7 @@ import { SectionHeading } from '@/components/section-heading'
 
 export function Skills() {
   return (
-    <section id="skills" className="bg-sky py-20 sm:py-24">
+    <section id="skills" className="bg-transparent py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Skills"

@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-white pt-28 pb-16 sm:pt-32 sm:pb-24"
+      className="relative overflow-hidden bg-transparent pt-28 pb-16 sm:pt-32 sm:pb-24"
     >
       <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-sky/80 blur-3xl" aria-hidden="true" />
       <div className="pointer-events-none absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-purple-300/10 blur-3xl" aria-hidden="true" />
