@@ -165,6 +165,49 @@
   }
 }
 
+/* Keep the requested portfolio palette consistent in every preview and browser color scheme. */
+:root:not(.light) {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+  --primary: #6c5ce7;
+  --primary-foreground: #ffffff;
+  --secondary: #f0eeff;
+  --secondary-foreground: #1f2937;
+  --muted: #f0eeff;
+  --muted-foreground: #1f2937;
+  --accent: #ff6b35;
+  --accent-foreground: #ffffff;
+  --border: #e3dfff;
+  --input: #e3dfff;
+  --ring: #6c5ce7;
+}
+
+.dark {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+  --primary: #6c5ce7;
+  --primary-foreground: #ffffff;
+  --secondary: #f0eeff;
+  --secondary-foreground: #1f2937;
+  --muted: #f0eeff;
+  --muted-foreground: #1f2937;
+  --accent: #ff6b35;
+  --accent-foreground: #ffffff;
+  --border: #e3dfff;
+  --input: #e3dfff;
+  --ring: #6c5ce7;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
