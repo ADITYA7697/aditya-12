@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-gradient-to-b from-sky to-white pt-28 pb-16 sm:pt-32 sm:pb-24"
+      className="relative overflow-hidden bg-white pt-28 pb-16 sm:pt-32 sm:pb-24"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2 lg:gap-16 lg:px-8">
         {/* Left column: intro + CTAs */}
@@ -17,15 +17,15 @@ export function Hero() {
             Available for Internship
           </span>
 
-          <h1 className="mt-6 text-balance text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+          <h1 className="mt-6 text-balance text-4xl font-extrabold leading-tight tracking-tight text-navy sm:text-5xl">
             Hi, I&apos;m <span className="text-brand">{profile.name}</span>
           </h1>
 
-          <p className="mt-4 text-lg font-medium text-slate-600">
+          <p className="mt-4 text-lg font-medium text-navy-soft">
             {profile.subtitle}
           </p>
 
-          <p className="mt-4 max-w-xl text-pretty leading-relaxed text-slate-600">
+          <p className="mt-4 max-w-xl text-pretty leading-relaxed text-navy-soft">
             {profile.intro}
           </p>
 
@@ -98,7 +98,7 @@ function SocialLink({
       target={href.startsWith('http') ? '_blank' : undefined}
       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
       aria-label={label}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition-colors hover:border-brand hover:text-brand"
+      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-navy-soft shadow-sm transition-colors hover:border-brand hover:text-brand"
     >
       {children}
     </a>

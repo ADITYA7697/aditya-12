@@ -10,7 +10,7 @@
   --color-brand-foreground: #ffffff;
   --color-accent-orange: #ff6b35;
   --color-navy: #1f2937;
-  --color-navy-soft: #374151;
+  --color-navy-soft: #1f2937;
   --color-sky: #f0eeff;
   --color-sky-200: #e3dfff;
   --font-sans: var(--font-inter);
@@ -61,22 +61,22 @@
   color-scheme: light;
   --background: #ffffff;
   --foreground: #1f2937;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
   --primary: #6c5ce7;
   --primary-foreground: #ffffff;
   --secondary: #f0eeff;
   --secondary-foreground: #1f2937;
   --muted: #f0eeff;
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: #1f2937;
   --accent: #ff6b35;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: #e3dfff;
+  --input: #e3dfff;
+  --ring: #6c5ce7;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -214,8 +214,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: linear-gradient(135deg, #ffffff 0%, #ffffff 66%, #f0eeff 100%);
-    background-attachment: fixed;
+    background-color: #ffffff;
   }
   /* Smooth scrolling for in-page nav links, offset for the sticky navbar */
   html {
