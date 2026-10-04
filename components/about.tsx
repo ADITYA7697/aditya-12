@@ -13,7 +13,7 @@ export function About() {
         <div className="mt-12 grid gap-10 md:grid-cols-2 md:items-center lg:gap-16">
           {/* Left: introduction */}
           <div>
-            <p className="text-pretty text-lg leading-relaxed text-slate-600">
+            <p className="text-pretty text-lg leading-relaxed text-navy-soft">
               {profile.about}
             </p>
           </div>
@@ -25,14 +25,14 @@ export function About() {
               return (
                 <div
                   key={card.title}
-                  className="flex items-start gap-4 rounded-2xl border border-slate-100 bg-sky p-5 shadow-sm transition-shadow hover:shadow-md"
+                  className="flex items-start gap-4 rounded-2xl border border-emerald/15 bg-sky p-5 shadow-sm shadow-emerald/5 transition-shadow hover:shadow-md"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand text-white">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <div>
-                    <h3 className="font-semibold text-slate-900">{card.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                    <h3 className="font-semibold text-navy">{card.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-navy-soft">
                       {card.description}
                     </p>
                   </div>

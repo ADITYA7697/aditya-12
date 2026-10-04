@@ -20,7 +20,7 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled
-          ? 'border-b border-slate-200 bg-white/90 backdrop-blur-md'
+          ? 'border-b border-emerald/15 bg-white/85 backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
@@ -30,7 +30,7 @@ export function Navbar() {
       >
         <a
           href="#home"
-          className="text-lg font-bold tracking-tight text-slate-900"
+          className="text-lg font-bold tracking-tight text-navy"
         >
           ADITYA<span className="text-brand">.DEV</span>
         </a>
@@ -41,7 +41,7 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-brand"
+                className="text-sm font-medium text-navy-soft transition-colors hover:text-brand"
               >
                 {link.label}
               </a>
@@ -53,7 +53,7 @@ export function Navbar() {
           <a
             href={profile.resume}
             download
-            className="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-700"
+            className="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-emerald"
           >
             <Download className="h-4 w-4" aria-hidden="true" />
             Download Resume
@@ -64,7 +64,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex items-center justify-center rounded-md p-2 text-slate-700 md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-navy-soft md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? 'Close menu' : 'Open menu'}
@@ -81,7 +81,7 @@ export function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="border-t border-slate-200 bg-white md:hidden"
+          className="border-t border-emerald/15 bg-white md:hidden"
         >
           <ul className="space-y-1 px-4 py-3">
             {navLinks.map((link) => (
@@ -89,7 +89,7 @@ export function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-slate-700 transition-colors hover:bg-sky hover:text-brand"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-navy-soft transition-colors hover:bg-sky hover:text-brand"
                 >
                   {link.label}
                 </a>

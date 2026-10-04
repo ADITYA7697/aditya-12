@@ -25,7 +25,7 @@ export function Footer() {
           </a>
           <a
             href="#home"
-            className="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+            className="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald"
           >
             <ArrowUp className="h-4 w-4" aria-hidden="true" />
             Back to top
