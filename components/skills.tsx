@@ -15,7 +15,7 @@ export function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group rounded-2xl border border-emerald/15 bg-white p-6 shadow-sm shadow-emerald/5 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+              className="group rounded-2xl border border-brand/15 bg-white p-6 shadow-sm shadow-brand/5 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
             >
               {/* Simple monogram avatar keeps the design consistent without external logos */}
               <div className="flex items-center gap-3">

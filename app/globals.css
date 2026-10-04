@@ -4,16 +4,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Portfolio brand tokens (forest green / emerald / lime) */
+/* Portfolio brand tokens (lavender / purple / white) */
 @theme inline {
-  --color-brand: #166534;
+  --color-brand: #6D28D9;
   --color-brand-foreground: #ffffff;
-  --color-emerald: #10b981;
-  --color-lime: #84cc16;
+  --color-emerald: #A78BFA;
+  --color-lime: #7C3AED;
   --color-navy: #1f2937;
   --color-navy-soft: #64748b;
-  --color-sky: #e8f5e9;
-  --color-sky-200: #cdebd2;
+  --color-sky: #FAF8FF;
+  --color-sky-200: #EDE9FE;
   --font-sans: var(--font-inter);
 }
 
@@ -66,18 +66,18 @@
   --card-foreground: #1f2937;
   --popover: #ffffff;
   --popover-foreground: #1f2937;
-  --primary: #166534;
+  --primary: #6D28D9;
   --primary-foreground: #ffffff;
-  --secondary: #e8f5e9;
+  --secondary: #EDE9FE;
   --secondary-foreground: #1f2937;
-  --muted: #e8f5e9;
+  --muted: #EDE9FE;
   --muted-foreground: #1f2937;
   --accent: #ff6b35;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #d8eadb;
-  --input: #d8eadb;
-  --ring: #10b981;
+  --border: #E9E2F8;
+  --input: #E9E2F8;
+  --ring: #A78BFA;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -175,17 +175,17 @@
   --card-foreground: #1f2937;
   --popover: #ffffff;
   --popover-foreground: #1f2937;
-  --primary: #166534;
+  --primary: #6D28D9;
   --primary-foreground: #ffffff;
-  --secondary: #e8f5e9;
+  --secondary: #EDE9FE;
   --secondary-foreground: #1f2937;
-  --muted: #e8f5e9;
+  --muted: #EDE9FE;
   --muted-foreground: #1f2937;
   --accent: #ff6b35;
   --accent-foreground: #ffffff;
-  --border: #d8eadb;
-  --input: #d8eadb;
-  --ring: #10b981;
+  --border: #E9E2F8;
+  --input: #E9E2F8;
+  --ring: #A78BFA;
 }
 
 .dark {
@@ -196,17 +196,17 @@
   --card-foreground: #1f2937;
   --popover: #ffffff;
   --popover-foreground: #1f2937;
-  --primary: #166534;
+  --primary: #6D28D9;
   --primary-foreground: #ffffff;
-  --secondary: #e8f5e9;
+  --secondary: #EDE9FE;
   --secondary-foreground: #1f2937;
-  --muted: #e8f5e9;
+  --muted: #EDE9FE;
   --muted-foreground: #1f2937;
   --accent: #ff6b35;
   --accent-foreground: #ffffff;
-  --border: #d8eadb;
-  --input: #d8eadb;
-  --ring: #10b981;
+  --border: #E9E2F8;
+  --input: #E9E2F8;
+  --ring: #A78BFA;
 }
 
 @layer base {
@@ -215,7 +215,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #f7faf5;
+    background-color: #FFFFFF;
   }
   /* Smooth scrolling for in-page nav links, offset for the sticky navbar */
   html {
@@ -254,6 +254,6 @@
 }
 
 /* Quiet botanical atmosphere without adding visual clutter. */
-.section-green-glow {
-  background-image: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.08), transparent 28%), radial-gradient(circle at 90% 80%, rgba(132, 204, 22, 0.08), transparent 24%);
+.section-lavender-glow {
+  background-image: radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.07), transparent 28%), radial-gradient(circle at 90% 80%, rgba(167, 139, 250, 0.08), transparent 24%);
 }

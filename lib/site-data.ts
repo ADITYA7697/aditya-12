@@ -9,7 +9,7 @@ export const profile = {
   role: 'Aspiring Full Stack Developer',
   subtitle: 'BCA Student | Full Stack Developer',
   intro:
-    'I build modern, responsive web applications and turn ideas into real-world solutions. Currently seeking internship opportunities to grow my skills, gain hands-on experience, and contribute to meaningful projects.',
+    'I build modern, responsive, and user-friendly web applications using modern technologies. Currently exploring new technologies, improving my skills, and building meaningful digital experiences.',
   about:
     'I am Aditya Dube, a BCA student at the University of Allahabad with a strong interest in web development. I enjoy creating clean, user-friendly websites and exploring new technologies. I have worked on projects like VASTRA, an E-commerce Shopping Website, and a few other web development projects that have helped me improve my skills. I am currently looking for an internship where I can gain real-world experience, learn from professionals, and grow as a web developer.',
   email: 'adityadubey41888@gmail.com',

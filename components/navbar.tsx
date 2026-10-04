@@ -20,7 +20,7 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled
-          ? 'border-b border-emerald/15 bg-white/85 backdrop-blur-md'
+          ? 'border-b border-brand/15 bg-white/85 backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
@@ -53,7 +53,7 @@ export function Navbar() {
           <a
             href={profile.resume}
             download
-            className="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-emerald"
+            className="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand"
           >
             <Download className="h-4 w-4" aria-hidden="true" />
             Download Resume
@@ -81,7 +81,7 @@ export function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="border-t border-emerald/15 bg-white md:hidden"
+          className="border-t border-brand/15 bg-white md:hidden"
         >
           <ul className="space-y-1 px-4 py-3">
             {navLinks.map((link) => (

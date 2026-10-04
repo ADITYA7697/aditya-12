@@ -43,7 +43,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-sky py-20 sm:py-24 section-green-glow">
+    <section id="contact" className="bg-sky py-20 sm:py-24 section-lavender-glow">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Contact"
@@ -87,7 +87,7 @@ export function Contact() {
           <form
             onSubmit={handleSubmit}
             noValidate
-            className="rounded-2xl border border-emerald/15 bg-white p-6 shadow-sm sm:p-8"
+            className="rounded-2xl border border-brand/15 bg-white p-6 shadow-sm sm:p-8"
           >
             <Field
               id="name"
@@ -120,7 +120,7 @@ export function Contact() {
                 }
                 aria-invalid={!!errors.message}
                 aria-describedby={errors.message ? 'message-error' : undefined}
-                className="w-full resize-y rounded-lg border border-slate-300 px-3 py-2 text-sm text-navy outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-emerald/20"
+                className="w-full resize-y rounded-lg border border-slate-300 px-3 py-2 text-sm text-navy outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-brand/20"
               />
               {errors.message && (
                 <p id="message-error" className="mt-1 text-sm text-red-600">
@@ -131,7 +131,7 @@ export function Contact() {
 
             <button
               type="submit"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand"
             >
               <Send className="h-4 w-4" aria-hidden="true" />
               Send Message
@@ -177,7 +177,7 @@ function Field({
         onChange={(e) => onChange(e.target.value)}
         aria-invalid={!!error}
         aria-describedby={error ? `${id}-error` : undefined}
-        className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-navy outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-emerald/20"
+        className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-navy outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-brand/20"
       />
       {error && (
         <p id={`${id}-error`} className="mt-1 text-sm text-red-600">
@@ -206,7 +206,7 @@ function ContactItem({
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      className="flex items-center gap-4 rounded-2xl border border-emerald/15 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+      className="flex items-center gap-4 rounded-2xl border border-brand/15 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
     >
       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand text-white">
         {icon}

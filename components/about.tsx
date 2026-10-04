@@ -25,7 +25,7 @@ export function About() {
               return (
                 <div
                   key={card.title}
-                  className="flex items-start gap-4 rounded-2xl border border-emerald/15 bg-sky p-5 shadow-sm shadow-emerald/5 transition-shadow hover:shadow-md"
+                  className="flex items-start gap-4 rounded-2xl border border-brand/15 bg-sky p-5 shadow-sm shadow-brand/5 transition-shadow hover:shadow-md"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand text-white">
                     <Icon className="h-5 w-5" aria-hidden="true" />
