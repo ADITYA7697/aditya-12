@@ -215,7 +215,39 @@
   }
   body {
     @apply bg-background text-foreground;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
     background-color: #FFFFFF;
+    background-image: radial-gradient(circle at 8% 8%, rgba(167, 139, 250, 0.2), transparent 26rem), radial-gradient(circle at 92% 18%, rgba(109, 40, 217, 0.12), transparent 24rem), linear-gradient(135deg, #FFFFFF 0%, #F5F3FF 48%, #EDE9FE 100%);
+    background-attachment: fixed;
+  }
+
+  body::before,
+  body::after {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+    content: '';
+    border-radius: 9999px;
+    filter: blur(80px);
+    opacity: 0.45;
+  }
+
+  body::before {
+    top: 18%;
+    left: -12rem;
+    width: 28rem;
+    height: 28rem;
+    background: rgba(167, 139, 250, 0.2);
+  }
+
+  body::after {
+    right: -12rem;
+    bottom: 8%;
+    width: 32rem;
+    height: 32rem;
+    background: rgba(124, 58, 237, 0.12);
   }
   /* Smooth scrolling for in-page nav links, offset for the sticky navbar */
   html {

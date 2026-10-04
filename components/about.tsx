@@ -6,7 +6,7 @@ const icons = [GraduationCap, Code2, Briefcase]
 
 export function About() {
   return (
-    <section id="about" className="bg-white py-20 sm:py-24">
+    <section id="about" className="bg-transparent py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="About" title="A little about me" />
 
